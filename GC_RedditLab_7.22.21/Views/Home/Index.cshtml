@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<Child>
+
+@foreach (var post in Model)
+{
+    <img src="@post.data.thumbnail" alt="Alternate Text" />
+    <br />
+    <a href="@post.data.url">Link</a>
+    <p>@post.data.title</p>
+
+
+}
+
